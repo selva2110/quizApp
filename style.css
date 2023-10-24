@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+   background:  rgba(153, 109, 225, 0.21);
+   min-height: 720px;
+   background-size:auto;
+}
+.quiz{
+    background: rgba(153, 109, 225, 0.086);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.765);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.493);    
+    width: 600px;
+    max-width: auto;
+    margin: 100px auto 0;
+    padding: 10px;
+
+}
+.quiz h1{
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.902);
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.app{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.902);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.btn{
+    background: #fff;
+    color: rgba(0, 0, 0, 0.902);
+    font-weight: 500;
+    font-size: 13px;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next{
+    background: blue;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{
+    background: rgba(0, 128, 0, 0.557);
+}
+.incorrect{
+    background: rgba(255, 0, 0, 0.536);
+}
+@media only screen and (max-width: 700px) {
+    body{
+        min-height: 610px;
+    }
+   .quiz{
+    width: 400px;
+    max-width: auto;
+   } 
+    
+}
